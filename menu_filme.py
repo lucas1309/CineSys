@@ -86,7 +86,7 @@ def menu_excluir():
 def menu_alterar():
     print('\n Alterar filme')
     cod_filme = int(input('Cod. filme: '))
-    f = filme.obter_filme()
+    f = filme.obter_filme(cod_filme)
     if (f == None):
         print ("Filme não encontrado")
     else:
