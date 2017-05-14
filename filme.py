@@ -28,3 +28,23 @@ def excluir_filme(cod_filme):
             filmes.remove(aux)
             return True
     return False
+
+def listar_filmes():
+    return filmes
+
+def alterar_filme(cod_filme,nome,genero,elenco,duracao,classificacao,distribuidora):
+    for f in filmes:
+        if f.cod == cod_filme:
+            f.nome = nome
+            f.genero = genero
+            f.elenco = elenco
+            f.duracao = duracao
+            f.classificacao = classificacao
+            f.distribuidora = distribuidora
+            return True
+        return False
+
+def excluir_todos_filmes():
+    global filmes
+    filmes = []
+
