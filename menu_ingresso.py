@@ -36,7 +36,7 @@ def menu_listar():
 def menu_excluir():
     print('\n Vender ingresso')
     cod_sessao = int(input('Cod. Sessao: '))
-    qtd = int(input(""))
+    qtd = int(input("Quantos deseja comprar?  "))
     s = ingresso.vender_ingresso(cod_sessao,qtd)
     if (s == False):
         print ("Sessao não encontrada ou quantidade de ingressos maior que a disponibilidade")
