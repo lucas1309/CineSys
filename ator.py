@@ -25,7 +25,7 @@ def remover_todos_atores():
     global atores
     atores =  [] 
 
-def ator_na_lista():
-    listar_ator(1, "Chris Hemsworth ", "Australiano", 33)
-    listar_ator(2, "Jason Statham", "Ingles", 49)
-    listar_ator(3, "Sylvester Stallone", "Americano", 70)
+def iniciar_atores():
+    adicionar_ator(1, "Chris Hemsworth ", "Australiano", 33)
+    adicionar_ator(2, "Jason Statham", "Ingles", 49)
+    adicionar_ator(3, "Sylvester Stallone", "Americano", 70)
