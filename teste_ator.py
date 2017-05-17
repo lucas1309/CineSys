@@ -35,4 +35,11 @@ class TestAtor(unittest.TestCase):
         self.assertEqual("Chris Hemsworth", a[1])
         self.assertEqual("Australiano", a[2])
         self.assertEqual(33, a[3])
- 
+  def test_excluir_ator(self):
+       ator.adicionar_ator(2, "Jason Statham", "Ingles", 49)
+       ator.adicionar_ator(1, "Chris Hemsworth", "Australiano", 33)
+
+       ator.excluir_ator(1)
+
+       a = ator.obter_ator(1)
+       self.assertIsNone(a)
