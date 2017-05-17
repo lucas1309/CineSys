@@ -26,3 +26,13 @@ class TestAtor(unittest.TestCase):
 
         atores = ator.listar_atores()
         self.assertEqual(2, len(atores))
+  def test_buscar_atores(self):
+        ator.adicionar_ator(2, "Jason Statham", "Ingles", 49)
+        ator.adicionar_ator(1, "Chris Hemsworth", "Australiano", 33)
+
+        a = ator.obter_ator(1)
+        self.assertEqual(1, a[0])
+        self.assertEqual("Chris Hemsworth", a[1])
+        self.assertEqual("Australiano", a[2])
+        self.assertEqual(33, a[3])
+ 
