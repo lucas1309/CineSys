@@ -43,3 +43,12 @@ class TestAtor(unittest.TestCase):
 
        a = ator.obter_ator(1)
        self.assertIsNone(a)
+      
+  def test_remover_todos_atores(self):
+        ator.adicionar_ator(2, "Jason Statham", "Ingles", 49)
+        ator.adicionar_ator(1, "Chris Hemsworth", "Australiano", 33)
+
+        ator.remover_todos_atores()
+
+        a = ator.obter_ator(1)
+        self.assertIsNone(a)
