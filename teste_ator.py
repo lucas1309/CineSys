@@ -52,3 +52,13 @@ class TestAtor(unittest.TestCase):
 
         a = ator.obter_ator(1)
         self.assertIsNone(a)
+        
+  def test_iniciar_atores(self):
+        ator.iniciar_atores()
+        atores = ator.listar_atores()
+        self.assertEqual(3, len(atores))
+        
+        
+            
+if __name__ == '__main__':
+    unittest.main(exit=False)
