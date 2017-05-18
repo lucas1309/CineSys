@@ -25,6 +25,12 @@ class TestIngresso(unittest.TestCase):
         i = ingresso.obter_ingresso(20)
         self.assertEqual(i[0],20)
         self.assertEqual(i[1][0],20)
+        
+   def  test_vender_ingresso(self):
+        sessao.criar_sessao(20,20,20,20,20)
+        ingresso.vender_ingresso(20,2)
+        i = ingresso.obter_ingresso(20)
+        self.assertEqual(i[2],18)
      
 if __name__ == '__main__':
     unittest.main(exit=False)
