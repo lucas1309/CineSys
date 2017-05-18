@@ -33,5 +33,10 @@ class TestIngresso(unittest.TestCase):
         i = ingresso.obter_ingresso(20)
         self.assertEqual(i[2],18)
      
+    def test_verificar_ingresso(self):
+        ingresso.adicionar_ingresso(20,20)
+        i = ingresso.verificar_ingresso(20)
+        self.assertEqual(i[1],20)
+     
 if __name__ == '__main__':
     unittest.main(exit=False)
