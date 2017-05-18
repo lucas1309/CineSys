@@ -18,6 +18,13 @@ class TestIngresso(unittest.TestCase):
         self.assertEqual(1, len(ingressos))
         sessoes = sessao.listar_sessao()
         self.assertEqual(1, len(sessoes))
+        
+   def test_obter_ingresso(self):
+        sessao.criar_sessao(20,20,20,20,20)
+        ingresso.adicionar_ingresso(20,20)
+        i = ingresso.obter_ingresso(20)
+        self.assertEqual(i[0],20)
+        self.assertEqual(i[1],20)
      
 if __name__ == '__main__':
     unittest.main(exit=False)
