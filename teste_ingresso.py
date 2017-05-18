@@ -24,7 +24,7 @@ class TestIngresso(unittest.TestCase):
         ingresso.adicionar_ingresso(20,20)
         i = ingresso.obter_ingresso(20)
         self.assertEqual(i[0],20)
-        self.assertEqual(i[1],20)
+        self.assertEqual(i[1][0],20)
      
 if __name__ == '__main__':
     unittest.main(exit=False)
