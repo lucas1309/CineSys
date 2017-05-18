@@ -34,6 +34,7 @@ class TestIngresso(unittest.TestCase):
         self.assertEqual(i[2],18)
      
     def test_verificar_ingresso(self):
+        sessao.criar_sessao(20,20,20,20,20)
         ingresso.adicionar_ingresso(20,20)
         i = ingresso.verificar_ingresso(20)
         self.assertEqual(i[1],20)
