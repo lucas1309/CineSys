@@ -10,5 +10,11 @@ class TestIngresso(unittest.TestCase):
         ingressos = ingresso.listar_ingressos()
         self.assertEqual(0, len(ingressos))
      
+  def test_adicionar_um_ingresso(self):
+        ingresso.adicionar_ingresso(20,20)
+         
+        ingressos = ingresso.listar_ingressos()
+        self.assertEqual(1, len(ingressos))
+     
 if __name__ == '__main__':
     unittest.main(exit=False)
