@@ -28,6 +28,7 @@ class TestIngresso(unittest.TestCase):
         
    def  test_vender_ingresso(self):
         sessao.criar_sessao(20,20,20,20,20)
+        ingresso.adicionar_ingresso(20,20)
         ingresso.vender_ingresso(20,2)
         i = ingresso.obter_ingresso(20)
         self.assertEqual(i[2],18)
